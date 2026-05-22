@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendSync - Schedule Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FriendSync 📅</h1>
+            <p>Input your schedule and find days to hang out!</p>
+        </header>
 
+        <section class="input-section">
+            <h2>Add Your Availability</h2>
+            <form id="schedule-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="date" id="date" required>
+                
+                <select id="status" required>
+                    <option value="Free">Completely Free</option>
+                    <option value="Half-Day">Half-Day (Available later)</option>
+                    <option value="Working">Working (Unavailable)</option>
+                    <option value="Event">Event (Church, Sports, etc.)</option>
+                </select>
+
+                <input type="text" id="event-details" placeholder="Event details (optional)">
+                
+                <button type="submit">Add to Calendar</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>Everyone's Schedule</h2>
+            <div id="schedule-list"></div>
+            
+            <button id="find-hangout" class="highlight-btn">Find Hangout Days</button>
+            <div id="hangout-results"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
