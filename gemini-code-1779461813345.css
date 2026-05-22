@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.highlight-btn {
+    background-color: #28a745;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.highlight-btn:hover {
+    background-color: #218838;
+}
+
+.entry {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.entry.Free { border-left-color: #28a745; }
+.entry.Working { border-left-color: #dc3545; }
+.entry.Half-Day { border-left-color: #ffc107; }
+.entry.Event { border-left-color: #17a2b8; }
+
+#hangout-results {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
+}
